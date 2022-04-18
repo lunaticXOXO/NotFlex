@@ -1,0 +1,537 @@
+{
+	"info": {
+		"_postman_id": "1e4e44cd-7318-4af0-aa33-6f56c161aa16",
+		"name": "Tubes PBP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/login?Email=avicii@gmail.com&Password=legends",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "avicii@gmail.com"
+						},
+						{
+							"key": "Password",
+							"value": "legends"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/login?Email=abcd@gmail.com&Password=abcd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "abcd@gmail.com"
+						},
+						{
+							"key": "Password",
+							"value": "abcd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ID",
+							"value": "921839",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "abcd@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "abcd",
+							"type": "text"
+						},
+						{
+							"key": "Date of Birth",
+							"value": "2003-04-12",
+							"type": "text"
+						},
+						{
+							"key": "Country",
+							"value": "Sweden",
+							"type": "text"
+						},
+						{
+							"key": "Gender",
+							"value": "Male",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ID",
+							"value": "103",
+							"type": "text"
+						},
+						{
+							"key": "Title",
+							"value": "Avengers",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "2020-03-04",
+							"type": "text"
+						},
+						{
+							"key": "Genre",
+							"value": "Action",
+							"type": "text"
+						},
+						{
+							"key": "Actor",
+							"value": "Robert Downey Jr, Chris Evans",
+							"type": "text"
+						},
+						{
+							"key": "Director",
+							"value": "Calvin",
+							"type": "text"
+						},
+						{
+							"key": "Synopsis",
+							"value": "The new Avengers.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/addNewMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addNewMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ID",
+							"value": "101",
+							"type": "text"
+						},
+						{
+							"key": "Title",
+							"value": "Kygo World Tour 2022",
+							"type": "text"
+						},
+						{
+							"key": "Release Date",
+							"value": "2021-03-04",
+							"type": "text"
+						},
+						{
+							"key": "Genre",
+							"value": "Comedy, Action",
+							"type": "text"
+						},
+						{
+							"key": "Actor",
+							"value": "Dimitri, Martin, Brown",
+							"type": "text"
+						},
+						{
+							"key": "Director",
+							"value": "Tim Berg",
+							"type": "text"
+						},
+						{
+							"key": "Synopsis",
+							"value": "This is kygo, over the world.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/updateMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Movie By Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/searchMovieAdmin?Title=World",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchMovieAdmin"
+					],
+					"query": [
+						{
+							"key": "Title",
+							"value": "World"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Movie By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/searchMovieAdmin/103",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchMovieAdmin",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/searchUser?Email=avicii@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchUser"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "avicii@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Suspend User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/suspendUser/abcd@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"suspendUser",
+						"abcd@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Name",
+							"value": "Kygo Brown",
+							"type": "text"
+						},
+						{
+							"key": "Date of Birth",
+							"value": "1997-04-14",
+							"type": "text"
+						},
+						{
+							"key": "Gender",
+							"value": "Male",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/updateProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Movie Member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/searchMovieMember?Genre=Comedy&Actor=Dimitri, Martin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchMovieMember"
+					],
+					"query": [
+						{
+							"key": "Title",
+							"value": "Garrix",
+							"disabled": true
+						},
+						{
+							"key": "Release Date",
+							"value": "2021",
+							"disabled": true
+						},
+						{
+							"key": "Director",
+							"value": "Alexander",
+							"disabled": true
+						},
+						{
+							"key": "Genre",
+							"value": "Comedy"
+						},
+						{
+							"key": "Actor",
+							"value": "Dimitri, Martin"
+						},
+						{
+							"key": "Synopsis",
+							"value": "This is kygo, over the world.",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Watch Movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/watchMovie?Title=Avengers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"watchMovie"
+					],
+					"query": [
+						{
+							"key": "Title",
+							"value": "Avengers"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Watch History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getHistory",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ID",
+							"value": "202",
+							"type": "text"
+						},
+						{
+							"key": "Subscription Plan",
+							"value": "Premium",
+							"type": "text"
+						},
+						{
+							"key": "CCNumber",
+							"value": "9829384928321144",
+							"type": "text"
+						},
+						{
+							"key": "Valid Thru",
+							"value": "03/23",
+							"type": "text"
+						},
+						{
+							"key": "CVC",
+							"value": "626",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/addSubscription",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addSubscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Subs",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteSubscription",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteSubscription"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
